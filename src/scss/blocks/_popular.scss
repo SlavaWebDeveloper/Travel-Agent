@@ -1,0 +1,37 @@
+.popular {
+  padding-block: 60px;
+
+  // .popular__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    margin-bottom: 32px;
+  }
+
+  // .popular__title
+
+  &__title {
+    display: grid;
+    row-gap: 16px;
+  }
+
+  // .popular__description
+
+  &__description {
+  }
+
+  // .popular__controls
+  &__controls {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  // .popular__boby
+
+  &__boby {
+  }
+}

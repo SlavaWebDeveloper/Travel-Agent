@@ -1,0 +1,67 @@
+.card {
+  // .card__images
+
+  &__images {
+    border-radius: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  // .card__title-wrapper
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 4px;
+  }
+
+  // .card__title
+
+  &__title {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: em(20);
+    line-height: 1.5;
+    color: #181818;
+  }
+
+  // .card__rating
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: em(14);
+
+    &::before {
+      content: "";
+      display: block;
+
+      width: 17px;
+      height: 16px;
+      background-image: url("./../../img/icons/star-small.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  // .card__price
+
+  &__price {
+    font-family: var(--font-main);
+    font-weight: 450;
+    font-size: em(16);
+    line-height: 1.5;
+    color: var(--text-color-alt);
+
+    span {
+      font-weight: 500;
+      color: var(--text-color);
+      i {
+        font-style: normal;
+        color: var(--accent);
+      }
+    } 
+  }
+}
