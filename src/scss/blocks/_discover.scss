@@ -18,27 +18,21 @@
   // .discover__title
 
   &__title {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: em(72);
-    color: #181818;
-    margin-bottom: 24px;
     position: relative;
     z-index: 2;
+    margin-bottom: 24px;
 
     &--decore {
-
-
       &::after {
-        content: '';
-       
+        content: "";
+
         position: absolute;
         left: 0;
         bottom: 0;
         width: 268px;
         height: 24px;
         z-index: -1;
-        background-image: url('./../../img/discover/underline.svg');
+        background-image: url("./../../img/discover/underline.svg");
         background-repeat: no-repeat;
       }
     }
@@ -59,11 +53,12 @@
 
   &__picture {
     position: relative;
-  
+
     // .discover__picture-hint
-  
+
     &-hint {
       position: absolute;
+      z-index: 10;
       top: 90px;
       left: 40px;
       max-width: em(324);
@@ -80,5 +75,8 @@
   // .discover__image
 
   &__image {
+    clip-path: path(
+      "M523.5 2L231 1C214.431 1 201 14.4315 201 31V158V162C201 179.673 186.673 194 169 194H157.5H31.5C14.6553 194 1 207.655 1 224.5V230.5V606V610C1 627.673 15.3269 642 33 642H49H325H329.5C346.897 642 361 627.897 361 610.5V547.5L361.5 486C361.5 468.327 375.827 454 393.5 454H408.477H527.5H531C547.569 454 561 440.569 561 424V32C561 15.4315 547.569 2 531 2H523.5Z"
+    );
   }
 }
