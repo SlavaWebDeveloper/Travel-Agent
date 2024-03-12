@@ -1,0 +1,84 @@
+.discover {
+  padding-block: 60px;
+  // .discover__grid
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 560px));
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  // .discover__desc
+
+  &__desc {
+  }
+
+  // .discover__title
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: em(72);
+    color: #181818;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
+
+    &--decore {
+
+
+      &::after {
+        content: '';
+       
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 268px;
+        height: 24px;
+        z-index: -1;
+        background-image: url('./../../img/discover/underline.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  // .discover__text
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  // .discover__form
+
+  &__form {
+  }
+
+  // .discover__picture
+
+  &__picture {
+    position: relative;
+  
+    // .discover__picture-hint
+  
+    &-hint {
+      position: absolute;
+      top: 90px;
+      left: 40px;
+      max-width: em(324);
+      width: 100%;
+    }
+
+    &-scroll {
+      position: absolute;
+      right: 15px;
+      bottom: 20px;
+    }
+  }
+
+  // .discover__image
+
+  &__image {
+  }
+}

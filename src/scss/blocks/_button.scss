@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  border-radius: var(--border-radius);
+  padding: 8px 20px;
+
+  background-color: var(--color-dark);
+  font-style: normal;
+  font-family: var(--font-main);
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--color-light);
+  cursor: pointer;
+
+  @include hover {
+    background-color: var(--accent);
+    color: var(--color-dark);
+  }
+}
+
+.button-login {
+  color: #454545;
+  background-color: transparent;
+  border: var(--border);
+}
+
+.button-signup {
+}

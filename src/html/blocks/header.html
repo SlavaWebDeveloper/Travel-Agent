@@ -1,15 +1,37 @@
 <header class="header">
-  <div class="container">
-    <div class="header__row">
-      <div class="logo"></div>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li><a href="#!" class="active"></a></li>
-        </ul>
-      </nav>
-      <button class="mobile-nav-btn">
-        <div class="nav-icon"></div>
-      </button>
+  <div class="container header__container">
+    <a class="header__logo" href="#"
+      ><img
+        src="./../img/icons/logo.svg"
+        alt="logo Logoipsum"
+        class="header__logo-images"
+        width="121"
+        height="24"
+        loading="lazy"
+      />
+    </a>
+    <nav class="header__nav nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#!" class="header__link header__link-active active">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="#!" class="header__link">About</a>
+        </li>
+        <li class="header__item">
+          <a href="#!" class="header__link">Packages</a>
+        </li>
+        <li class="header__item">
+          <a href="#!" class="header__link">FAQ</a>
+        </li>
+        <li class="header__item">
+          <a href="#!" class="header__link">Community</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__button-inner">
+      <a class="header__button button button-login">Login</a>
+      <a class="header__button button button-signup">Sign Up</a>
     </div>
   </div>
 </header>
