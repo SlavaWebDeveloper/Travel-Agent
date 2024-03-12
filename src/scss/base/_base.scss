@@ -29,3 +29,18 @@ a {
   font-weight: 450;
   color: var(--text-color-alt);
 }
+
+.h1 {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: em(72);
+  color: #181818;
+}
+
+.h4 {
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: em(24);
+  line-height: 1.4;
+  color: #9e9e9e;
+}
