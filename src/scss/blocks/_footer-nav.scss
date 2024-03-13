@@ -1,0 +1,33 @@
+.footer-nav {
+  display: grid;
+  row-gap: 16px;
+  // .footer-nav__title
+
+  &__title {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: em(18);
+    line-height: 1.5;
+    color: var(--color-light);
+  }
+
+  // .footer-nav__list
+
+  &__list {
+  }
+
+  // .footer-nav__item
+
+  &__item {
+    padding-block: 8px;
+  }
+
+  // .footer-nav__link
+
+  &__link {
+    font-family: var(--font-main);
+    font-weight: 450;
+    line-height: 1,5;
+    color: var(--color-light);
+  }
+}

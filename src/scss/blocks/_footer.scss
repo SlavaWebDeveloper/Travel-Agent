@@ -1,2 +1,54 @@
 .footer {
+  padding-block: 80px;
+  background-color: var(--footer-bg);
+  color: var(--color-light);
+  font-size: 16px;
+
+  // .footer__grid
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 536px));
+    justify-content: space-between; 
+    align-items: start;
+    column-gap: 30px;
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    display: grid;
+    row-gap: 24px;
+  }
+
+  // .footer__logo
+
+  &__logo {
+  }
+
+  // .footer__img
+
+  &__img {
+  }
+
+  // .footer__copyright-description
+
+  &__copyright-description {
+    font-family: var(--font-main);
+    font-weight: 450;
+    font-size: em(16);
+    line-height: 1.5;
+    color: var((--color-light));
+    max-width: 300px;
+
+  }
+
+  // .footer__navigation
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    column-gap: 40px;
+  }
 }
