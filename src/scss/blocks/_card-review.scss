@@ -1,0 +1,69 @@
+.card-review {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 32px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 0 rgba(23, 28, 31, 0.23);
+  background: var(--page-bg);
+  
+
+  // .card-review__rating
+
+  &__rating {
+    display: flex;
+    column-gap: 4px;
+  }
+
+  // .card-review__text
+
+  &__text {
+    font-family: var(--font-main);
+    font-weight: 450;
+    font-size: em(16);
+    line-height: 1.5;
+    color: var(--text-color-alt);
+  }
+
+  // .card-review__author
+
+  &__author {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  // .card-review__author-img
+
+  &__author-img {
+    border-radius: 50%;
+  }
+
+  // .card-review__author-title
+
+  &__author-title {
+  }
+
+  // .card-review__author-name
+
+  &__author-name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: em(16);
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  // .card-review__author-role
+
+  &__author-role {
+    font-family: var(--font-family);
+    font-weight: 450;
+    font-size: em(16);
+    line-height: 1.5;
+    color: var(--text-color-alt);
+  }
+}
