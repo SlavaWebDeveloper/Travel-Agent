@@ -1,0 +1,58 @@
+.subscribe {
+  padding-block: 80px;
+  background-color: var(--accent);
+  overflow-y: hidden;
+  // .subscribe__row
+
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-left: 180px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -78px;
+      top: -103px;
+      width: 236px;
+      height: 273px;
+      background-image: url("./../../img/subscribe/subscribe-pin-bg.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  
+  // .subscribe__desc
+
+  &__desc {
+    display: grid;
+    row-gap: 4px;
+  }
+
+  // .subscribe__title
+
+  &__title {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: em(28);
+    color: var(--color-light);
+  }
+
+  // .subscribe__description
+
+  &__description {
+    font-family: var(--font-main);
+    font-weight: 450;
+    font-size: em(20);
+    color: var(--color-light);
+  }
+
+  // .subscribe__form
+
+  &__form {
+    flex-grow: 1;
+  }
+}
