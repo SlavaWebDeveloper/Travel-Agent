@@ -1,19 +1,13 @@
-// import autoCompleteFunc from "./modules/autoComplete";
-// import picker from "./modules/calendarPicker";
+import autoComplete from "./modules/autoComplete";
+import picker from "./modules/calendarPicker";
+import swiper from "./modules/swiper";
+import scrollReveal from "./modules/scrollReveal";
 
-// autoCompleteFunc();
-// picker();
+autoComplete();
+picker();
+swiper();
+scrollReveal();
+
+
 // import mobileNav from './modules/mobile-nav.js';
 // mobileNav();
-
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 4,
-  spaceBetween: 32,
-  navigation: {
-    nextEl: '#sliderNext',
-    prevEl: '#sliderPrev',
-  },
-});  
