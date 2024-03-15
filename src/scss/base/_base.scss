@@ -54,3 +54,9 @@ a {
   line-height: 1.4;
   color: #9e9e9e;
 }
+
+.smooth-transition {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
