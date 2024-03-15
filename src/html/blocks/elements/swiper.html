@@ -1,12 +1,5 @@
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">@@include('./../cards/venice.html')</div>
-    
-    <div class="swiper-slide">@@include('./../cards/bali.html')</div>
-    <div class="swiper-slide">@@include('./../cards/thailand.html')</div>
-    <div class="swiper-slide">@@include('./../cards/greek.html')</div>
-    <div class="swiper-slide">@@include('./../cards/france.html')</div>
-    <div class="swiper-slide">@@include('./../cards/USA.html')</div>
-    <div class="swiper-slide">@@include('./../cards/dubai.html')</div>
-  </div>
+<div class="swiper" id="swiper-popular">
+    <div class="swiper-wrapper">
+        @@loop('./../templates/card-populars.html', './data/populars.json')
+    </div>
 </div>

@@ -1,5 +1,5 @@
-.card {
-  // .card__images
+.card-populars {
+  // .card-populars__images
 
   &__images {
     border-radius: 12px;
@@ -7,7 +7,7 @@
     width: 100%;
   }
 
-  // .card__title-wrapper
+  // .card-populars__title-wrapper
 
   &__title-wrapper {
     display: flex;
@@ -17,7 +17,7 @@
     margin-bottom: 4px;
   }
 
-  // .card__title
+  // .card-populars__title
 
   &__title {
     font-family: var(--font-main);
@@ -27,7 +27,7 @@
     color: #181818;
   }
 
-  // .card__rating
+  // .card-populars__rating
 
   &__rating {
     display: flex;
@@ -46,7 +46,7 @@
     }
   }
 
-  // .card__price
+  // .card-populars__price
 
   &__price {
     font-family: var(--font-main);

@@ -4,12 +4,12 @@
   row-gap: 32px;
   align-items: flex-start;
   align-self: stretch;
-  padding: 32px;
-
+  padding: 30px;
+  margin: 2px;
+  height: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 10px 0 rgba(23, 28, 31, 0.23);
   background: var(--page-bg);
-  
 
   // .card-review__rating
 
@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     column-gap: 16px;
+    margin-top: auto;
   }
 
   // .card-review__author-img

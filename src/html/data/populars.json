@@ -1,0 +1,58 @@
+[
+  {
+    "titlePopulars": "Bali, Indonesia",
+    "ratingPopulars": "4.5",
+    "pricePopulars": "480",
+    "currencyPopulars": "$",
+    "imagesPopulars": "bali.jpg",
+    "altPopulars": "images, Bali, Indonesia"
+  },
+  {
+    "titlePopulars": "Dubai, UAE",
+    "ratingPopulars": "4.5",
+    "pricePopulars": "2800",
+    "currencyPopulars": "$",
+    "imagesPopulars": "dubai.jpg",
+    "altPopulars": "images, Dubai, UAE"
+  },
+  {
+    "titlePopulars": "Paris, France",
+    "ratingPopulars": "4.5",
+    "pricePopulars": "1100",
+    "currencyPopulars": "$",
+    "imagesPopulars": "paris.jpg",
+    "altPopulars": "images, Paris, France"
+  },
+  {
+    "titlePopulars": "Santorini, Greek",
+    "ratingPopulars": "4.5",
+    "pricePopulars": "900",
+    "currencyPopulars": "$",
+    "imagesPopulars": "santorini.jpg",
+    "altPopulars": "images, Santorini, Greek"
+  },
+  {
+    "titlePopulars": "Bangkok, Thailand",
+    "ratingPopulars": "4.5",
+    "pricePopulars": "440",
+    "currencyPopulars": "$",
+    "imagesPopulars": "bangkok.jpg",
+    "altPopulars": "images, Bangkok, Thailand"
+  },
+  {
+    "titlePopulars": "New York, USA",
+    "ratingPopulars": "4.5",
+    "pricePopulars": "1800",
+    "currencyPopulars": "$",
+    "imagesPopulars": "new-york.jpg",
+    "altPopulars": "images, New York, USA"
+  },
+  {
+    "titlePopulars": "Venice, Italy",
+    "ratingPopulars": "4.5",
+    "pricePopulars": "900",
+    "currencyPopulars": "$",
+    "imagesPopulars": "venice.jpg",
+    "altPopulars": "images, Venice, Italy"
+  }
+]

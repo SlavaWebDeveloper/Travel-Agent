@@ -5,8 +5,7 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 32px;
-    overflow-y: hidden;
+    gap: 32px;
   }
 
   // .testimonials__col
@@ -15,39 +14,15 @@
     display: grid;
     row-gap: 32px;
     padding-top: 25px;
+  }
 
-    animation: slideUp 20s linear infinite;
+  &__swiper {
+    height: 900px;
 
-    &:nth-child(1) {
-      margin-top: -66px;
-    }
-    &:nth-child(3) {
-      margin-top: -42px;
+    .swiper-slide {
+      height: 322px !important;
     }
   }
 }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(0);
-  }
-  95% {
-    transform: translateY(-50%);
-    opacity: 1;
-    filter: blur(0);
-  }
-  97% {
-    opacity: 0;
-    filter: blur(10px);
-  }
-  98% {
-    transform: translateY(0%);
-    opacity: 0;
-    filter: blur(10px);
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-    filter: blur(0);
-  }
-}
+
