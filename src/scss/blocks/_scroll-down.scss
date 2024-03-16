@@ -6,7 +6,9 @@
 
   &__text {
     animation: rotation 10s linear 0s infinite;
-    
+    max-width: 140px;
+    width: 100%;
+    aspect-ratio: 1;
   }
 
   // .scroll-down__icon
@@ -16,6 +18,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    max-width: 49px;
+    width: 100%;
+    height: 80px;
   }
 }
 

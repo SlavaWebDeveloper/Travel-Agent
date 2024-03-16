@@ -29,11 +29,13 @@
   }
 
   .form__locations {
-    background-image: url('./../../img/icons/map.svg');
+    background-image: url('./../../img/svgsprite/stack/svg/sprite.stack.svg#icons--map');
+    background-size: 24px;
   }
 
   .form__date-time {
-    background-image: url('./../../img/icons/calendar.svg');
+    background-image: url('./../../img/svgsprite/stack/svg/sprite.stack.svg#icons--calendar');
+    background-size: 24px;
   }
 
   // .form__input
@@ -44,7 +46,6 @@
     font-size: em(14);
 
     ::placeholder {
-
       color: var(--text-color-alt);
     }
   }
@@ -62,12 +63,13 @@
   &__button {
     border-radius: 10px;
     padding: 12px;
-    width: var(--button-heigth);
+    width: var(--button-heigth); 
     height: var(--button-heigth);
     background-color: var(--accent);
-    background-image: url("./../../img/icons/search.svg");
+    background-image: url("./../../img/svgsprite/stack/svg/sprite.stack.svg#icons--search");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 24px;
 
     @include hover {
       background-color: var(--text-color);

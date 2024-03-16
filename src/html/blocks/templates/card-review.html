@@ -2,9 +2,28 @@
     <article class="card-review">
         <div class="card-review__rating">
             @@for (var i = 0; i
-            < context.starsTestimonials; i++) { <img src="./../../../img/icons/star.svg" alt="star" width="20" height="19" loading="lazy" />
+            < context.starsTestimonials; i++) { 
+                <svg class="icon--star">
+                    <use href="./img/svgsprite/stack/svg/sprite.stack.svg#icons--star"></use>
+                </svg>
+                <!-- <img 
+                    src="./../../../img/icons/star.svg" 
+                    alt="star" 
+                    width="20" 
+                    height="19" 
+                    loading="lazy" 
+                /> -->
             } @@if (context.starsTestimonials
-            < 5) { @@for (var i=0; i < 5 - context.starsTestimonials; i++) { <img src="./../../../img/icons/star-off.svg" alt="star" width="20" height="19" loading="lazy" />
+            < 5) { @@for (var i=0; i < 5 - context.starsTestimonials; i++) { 
+                <svg class="icon--star-off">
+                    <use href="./img/svgsprite/stack/svg/sprite.stack.svg#icons--star-off"></use>
+                </svg>
+                <!-- <img src="./../../../img/icons/star-off.svg"
+                    alt="star" 
+                    width="20" 
+                    height="19" 
+                    loading="lazy" 
+                /> -->
             } }
         </div>
         <div class="card-review__text">

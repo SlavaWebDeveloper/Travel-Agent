@@ -46,10 +46,6 @@ function scrollRevealFunc() {
     origin: 'bottom',
   })
 
-  ScrollReveal().reveal('.scroll-down__icon', {
-    delay: 100,
-  })
-
   ScrollReveal().reveal('.popular__slider', {
     origin: 'right',
     distance: '300px',
