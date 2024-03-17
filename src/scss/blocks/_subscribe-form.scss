@@ -3,6 +3,12 @@
   column-gap: 12px;
   align-items: center;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 12px;
+  }
+
   // .subscribe-form__input
 
   &__input {
@@ -22,7 +28,6 @@
     background-position: 12px 12px; /* x y */
     background-size: auto;
     background-repeat: no-repeat;
-    
 
     &::placeholder {
       color: var(--text-color-alt);

@@ -2,10 +2,14 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr auto;
   align-items: center;
-  column-gap: 16px;
+  gap: 16px;
   border: 1px solid rgba(144, 144, 144, 0.3);
   border-radius: 16px;
   padding: 12px 16px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 
   // .form__label
 
@@ -56,20 +60,28 @@
     border: 1px solid #909090;
     width: 0;
     height: 24px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   // .form__button
 
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border-radius: 10px;
     padding: 12px;
     width: var(--button-heigth); 
     height: var(--button-heigth);
     background-color: var(--accent);
-    background-image: url("./../../img/svgsprite/stack/svg/sprite.stack.svg#icons--search");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 24px;
+    // background-image: url("./../../img/svgsprite/stack/svg/sprite.stack.svg#icons--search");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    width: 100%;
 
     @include hover {
       background-color: var(--text-color);

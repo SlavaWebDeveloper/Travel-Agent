@@ -35,8 +35,12 @@
 		(100% - var(--container-width)) / 2 + var(--container-padding)
 	);
 
-	@include tablet {
+	@media (max-width: 1240px) {
 		padding-left: var(--container-padding);
+	}
+	
+	@include mobile {
+		padding: 0 var(--container-padding);
 	}
 }
 

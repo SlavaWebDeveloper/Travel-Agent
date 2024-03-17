@@ -1,5 +1,6 @@
 .discover {
-  padding-block: 60px;
+  padding-block: var(--section-padding-y);
+
   // .discover__grid
 
   &__grid {
@@ -7,7 +8,11 @@
     grid-template-columns: repeat(2, minmax(300px, 560px));
     align-items: center;
     justify-content: space-between;
-    column-gap: 20px;
+    gap: 20px;
+
+    @include laptop {
+      grid-template-columns: 1fr;
+    }
   }
 
   // .discover__desc
@@ -30,11 +35,18 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 268px;
-        height: 24px;
         z-index: -1;
-        background-image: url('./../../img/svgsprite/stack/svg/sprite.stack.svg#discover--underline');
+        background-image: url("./../../img/discover/underline.png");
+        width: 268px;
+        height: 100%;
         background-repeat: no-repeat;
+        background-position: bottom;
+
+        @include mobile {
+          width: 184px;
+          height: 12px;
+          background-size: contain;
+        }
       }
     }
   }
@@ -43,6 +55,14 @@
 
   &__text {
     margin-bottom: 50px;
+
+    @include laptop {
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   // .discover__form
@@ -55,6 +75,16 @@
   &__picture {
     position: relative;
 
+    @include laptop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-self: center;
+
+      width: fit-content;
+      grid-row: -1 / 1;
+    }
+
     // .discover__picture-hint
 
     &-hint {
@@ -64,12 +94,35 @@
       left: 40px;
       max-width: em(324);
       width: 100%;
+
+      @include desktop {
+        top: 40px;
+        left: 20px;
+      }
+
+      @include mobile {
+        max-width: 280px;
+        top: 20px;
+        left: auto;
+      }
     }
+
+    // .discover__picture-scroll
 
     &-scroll {
       position: absolute;
       right: 15px;
       bottom: 20px;
+
+      @include desktop {
+        right: 0;
+        bottom: 0;
+      }
+
+      @include mobile-xs {
+        display: none;
+
+      }
     }
   }
 
@@ -79,5 +132,19 @@
     clip-path: path(
       "M523.5 2L231 1C214.431 1 201 14.4315 201 31V158V162C201 179.673 186.673 194 169 194H157.5H31.5C14.6553 194 1 207.655 1 224.5V230.5V606V610C1 627.673 15.3269 642 33 642H49H325H329.5C346.897 642 361 627.897 361 610.5V547.5L361.5 486C361.5 468.327 375.827 454 393.5 454H408.477H527.5H531C547.569 454 561 440.569 561 424V32C561 15.4315 547.569 2 531 2H523.5Z"
     );
+    @include mobile {
+      clip-path: path(
+        "M467.518 1.93604L206.357 1C191.564 1 179.571 12.9924 179.571 27.7857V29.0811V147.958V149.655C179.571 167.328 165.245 181.655 147.571 181.655H140.732H28.2321C13.1923 181.655 1 193.847 1 208.887V215.821V567.303V569C1 586.673 15.3269 601 33 601H43.8571H267.539H270.196C286.481 601 299.682 587.799 299.682 571.515V512.544V410.953C299.682 394.41 313.092 381 329.635 381H341.625H470.643H472.472C487.981 381 500.554 368.428 500.554 352.919L501 30.0172C501 14.5084 488.428 1.93604 472.919 1.93604H467.518Z"
+      );
+    }
+
+    @include mobile-s {
+      clip-path: path(
+        "M374.214 1.62402L165.286 1H162.578C152.239 1 143.857 9.38156 143.857 19.7207V98.9719C143.857 111.379 133.799 121.437 121.392 121.437H112.786H22.7857C10.7538 121.437 1 131.191 1 143.223V144.214V378.535C1 390.942 11.0579 401 23.4649 401H35.2857H232.429H238.486C249.342 401 258.143 392.199 258.143 381.343V342.03L258.5 303.652C258.5 292.624 267.44 283.683 278.469 283.683H292.055H377.071H382.279C392.618 283.683 401 275.302 401 264.963V20.3448C401 10.0056 392.618 1.62402 382.279 1.62402H374.214Z"
+      );
+    }
+    @include mobile-xs {
+      clip-path: none;
+    }
   }
 }

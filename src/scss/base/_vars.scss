@@ -20,13 +20,18 @@
   --button-heigth: 48px;
 	--border-radius: 8px;
 	--border: 1px solid #b7b7b7;
-	
+
+  --section-padding-y: 60px;
+
   --transition-duration: 0.2s; 
 
-	--desktop-size: 1440px;
-	--laptop-size: 1199px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
+	@include laptop {
+		--section-padding-y: 40px;
+	}
+
+	@include mobile {
+		--section-padding-y: 20px;
+	}
 }
 
 .dark {

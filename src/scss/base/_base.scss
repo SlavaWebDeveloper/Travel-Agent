@@ -23,6 +23,10 @@ a {
   font-size: em(18);
   line-height: 1.5;
   color: var(--text-color-alt);
+
+  @include mobile {
+    font-size: em(16);  
+  }
 }
 
 .muted {
@@ -35,6 +39,14 @@ a {
   font-weight: 700;
   font-size: em(72);
   color: #181818;
+
+  @include laptop {
+    font-size: em(52);
+  }
+  
+  @include mobile {
+    font-size: em(36);
+  }
 }
 
 .h2 {
@@ -45,6 +57,10 @@ a {
   font-weight: 500;
   font-size: em(36);
   color: #181818;
+
+  @include tablet {
+    font-size: em(32);
+  }
 }
 
 .h4 {
@@ -53,6 +69,14 @@ a {
   font-size: em(24);
   line-height: 1.4;
   color: #9e9e9e;
+
+  @include tablet {
+    font-size: em(20);
+  }
+
+  @include mobile {
+    font-size: em(18);
+  }
 }
 
 .smooth-transition {

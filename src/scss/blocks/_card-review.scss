@@ -26,6 +26,10 @@
     font-size: em(16);
     line-height: 1.5;
     color: var(--text-color-alt);
+
+    @include mobile {
+      font-size: em(14);
+    }
   }
 
   // .card-review__author

@@ -1,5 +1,5 @@
 .footer {
-  padding-block: 80px;
+  padding-block: var(--section-padding-y);
   background-color: var(--footer-bg);
   color: var(--color-light);
   font-size: 16px;
@@ -12,6 +12,11 @@
     justify-content: space-between; 
     align-items: start;
     column-gap: 30px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
   }
 
   // .footer__copyright

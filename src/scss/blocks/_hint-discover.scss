@@ -8,6 +8,10 @@
   box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
   background-color: var(--page-bg);
 
+  @include mobile {
+    gap: 10px;
+  }
+  
   // .hint-discover__picture
 
   &__picture {
@@ -38,6 +42,10 @@
     font-size: em(18);
     line-height: 1.5;
     color: var(--text-color);
+
+    @include mobile {
+      font-size: em(16);
+    }
   }
 
   // .hint-discover__rating
@@ -47,7 +55,11 @@
     align-items: center;
     column-gap: 4px;
 
-    font-size: rem(14);
+    font-size: 0.778em;
+
+    @include mobile {
+      font-size: em(16);
+    }
 
     &::before {
       content: "";
@@ -68,6 +80,10 @@
     font-family: var(--font-main);
     font-size: em(16);
     line-height: 1.5;
+    
+    @include mobile {
+      font-size: em(14);
+    }
     
     i {
       font-weight: 500;

@@ -5,7 +5,7 @@
 	--width: 40px;
 	--height: 30px;
 
-	--line-height: 4px;
+	--line-height: 3px;
 	--spacing: 6px;
 
 	--color: #000;
@@ -81,12 +81,13 @@
 /* Layout */
 
 .mobile-nav-btn {
+	position: relative;
 	z-index: 999;
-	// display: none;
+	display: none;
 }
 
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
+@include tablet {
+	.mobile-nav-btn {
+		display: block;
+	}
+}

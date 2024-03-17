@@ -1,4 +1,29 @@
 .testimonials {
+  overflow-y: hidden;
+
+  @include laptop {
+    height: 400px;
+  }
+
+  // .testimonials-horizontal
+
+  &-horizontal {
+    display: none;
+
+    .swiper {
+      width: 100%;
+    }
+
+    .card-review {
+      height: 300px;
+      gap: 10px;
+    }
+
+    @include laptop {
+      display: block;
+    }
+  }
+
 
   // .testimonials__grid
 
@@ -6,6 +31,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+
+    @include laptop {
+      display: none;
+    }
   }
 
   // .testimonials__col
@@ -19,8 +48,17 @@
   &__swiper {
     height: 900px;
 
+    // @include laptop {
+    //   height: ;
+    // }
+
     .swiper-slide {
-      height: 322px !important;
+      height: 354px !important;
+      margin-bottom: 32px;
+
+      @include desktop {
+        height: max-content !important; 
+      }
     }
   }
 }
