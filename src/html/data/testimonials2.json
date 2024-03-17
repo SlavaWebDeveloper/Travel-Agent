@@ -1,17 +1,17 @@
 [
   {
-    "starsTestimonials": "5",
-    "textTestimonials": "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!",
-    "nameTestimonials": "Nichole Edward",
-    "roleTestimonials": "Travel Enthusiast",
-    "imagesTestimonials": "04.jpg"
-  },
-  {
     "starsTestimonials": "4",
     "textTestimonials": "The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish.",
     "nameTestimonials": "Jennice Ong",
     "roleTestimonials": "Travel Enthusiast",
     "imagesTestimonials": "05.jpg"
+  },
+  {
+    "starsTestimonials": "5",
+    "textTestimonials": "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!",
+    "nameTestimonials": "Nichole Edward",
+    "roleTestimonials": "Travel Enthusiast",
+    "imagesTestimonials": "04.jpg"
   },
   {
     "starsTestimonials": "5",
