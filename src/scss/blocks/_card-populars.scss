@@ -20,11 +20,8 @@
   // .card-populars__title
 
   &__title {
-    font-family: var(--font-main);
-    font-weight: 500;
     font-size: em(20);
     line-height: 1.5;
-    color: #181818;
 
     @include laptop {
       font-size: em(18);

@@ -8,7 +8,7 @@
   margin: 2px;
   height: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 10px 0 rgba(23, 28, 31, 0.23);
+  box-shadow: var(--box-shadow-review);
   background: var(--page-bg);
 
   // .card-review__rating
@@ -44,7 +44,9 @@
   // .card-review__author-img
 
   &__author-img {
-    border-radius: 50%;
+    img {
+      border-radius: 50%;
+    }
   }
 
   // .card-review__author-title

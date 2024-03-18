@@ -5,8 +5,8 @@
   border-radius: 12px;
   padding: 12px;
 
-  box-shadow: 0 4px 34px 0 rgba(50, 75, 104, 0.17);
-  background-color: var(--page-bg);
+  box-shadow: var(--box-shadow-hint);
+  background-color: var(--hint-bg);
 
   @include mobile {
     gap: 10px;
