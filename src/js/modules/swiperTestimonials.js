@@ -1,6 +1,12 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+/**
+ * Function to initialize Swiper instances for testimonials section.
+ * This function initializes different Swiper instances based on the screen width.
+ * It creates vertical Swiper instances for testimonials in columns on wider screens
+ * and a horizontal Swiper instance for testimonials on smaller screens.
+ */
 function swiperTestimonials() {
 
   let swiper1;
@@ -29,7 +35,7 @@ function swiperTestimonials() {
     },
   }
 
-  // 1023px
+  // Define breakpoint at 1023px
   const breakpoint = window.matchMedia('(max-width:1023px)');
   const breakpointChecker = function () {
     if (breakpoint.matches === true) {

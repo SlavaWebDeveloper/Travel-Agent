@@ -1,6 +1,10 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
+/**
+ * Function to initialize a Swiper instance for the popular items carousel.
+ * This function creates a Swiper instance with custom options for different breakpoints.
+ */
 function swiperPopular() {
   const swiper = new Swiper('#swiper-popular', {
     slidesPerView: 1,

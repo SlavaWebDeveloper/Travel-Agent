@@ -11,4 +11,3 @@ picker();
 scrollReveal();
 swiperPopular();
 swiperTestimonials();
-
