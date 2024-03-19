@@ -23,10 +23,10 @@
     font-size: rem(14);
     line-height: 1.5;
     color: var(--text-color);
-
-    background-image: url('./../../img/icons/email.svg');
-    background-position: 12px 12px; /* x y */
-    background-size: auto;
+    
+    background-image: url('./../../img/svgsprite/stack/svg/sprite.stack.svg#icons--email');
+    background-position: 12px 8px; /* x y */
+    background-size: 24px;
     background-repeat: no-repeat;
 
     &::placeholder {
